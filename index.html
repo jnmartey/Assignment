@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Josh Mart – Personal Webpage</title>
 
-    <!-- MathJax -->
+    <!-- MathJax for Math -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async
         src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
@@ -13,86 +13,133 @@
 
     <style>
         body {
-            font-family: Georgia, serif;
             margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background: #f9f9f9;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
         }
         .container {
             max-width: 900px;
-            margin: auto;
-            background: white;
+            margin: 40px auto;
             padding: 30px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1, h2 {
-            font-family: "Times New Roman", serif;
-        }
-        img {
-            max-width: 180px;
-            border-radius: 8px;
-            margin-right: 20px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
         }
         .header {
             display: flex;
             align-items: center;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e0e0e0;
         }
-        a {
-            color: #0645AD;
+        .header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 25px;
+            border: 3px solid #4a90e2;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2em;
+            color: #4a90e2;
+        }
+        h2 {
+            color: #4a90e2;
+            margin-top: 40px;
+        }
+        p, li {
+            font-size: 1.05em;
+            line-height: 1.6;
+        }
+        .contact a {
+            text-decoration: none;
+            margin-right: 15px;
+            padding: 8px 15px;
+            border-radius: 6px;
+            background-color: #4a90e2;
+            color: white;
+            transition: background 0.3s;
+        }
+        .contact a:hover {
+            background-color: #357ABD;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .card {
+            background-color: #f7f9fc;
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            border-left: 5px solid #4a90e2;
+            border-radius: 6px;
+        }
+        .math {
+            text-align: center;
+            font-size: 1.2em;
+            margin: 20px 0;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
+
+    <!-- Header -->
     <div class="header">
         <img src="YOUR_IMAGE_URL_HERE" alt="Profile Photo">
         <div>
             <h1>Josh Mart</h1>
-            <p>Department of Mathematics<br>
-            Kwame Nkrumah University of Science and Technology (KNUST)</p>
+            <p>Master’s Student, First Year – NAU</p>
+            <p>Graduate Teaching Assistant (GTA), Department of Mathematics</p>
+            <div class="contact">
+                <a href="YOUR_LINKEDIN_URL" target="_blank">LinkedIn</a>
+                <a href="YOUR_ORCID_URL" target="_blank">ORCID</a>
+                <a href="https://github.com/YOUR_USERNAME" target="_blank">GitHub</a>
+            </div>
             <p>Email: your.email@domain.com</p>
         </div>
     </div>
 
+    <!-- About Me -->
     <h2>About Me</h2>
     <p>
-        I am a researcher in applied mathematics with interests in differential 
-        equations, epidemiological modeling, mechanotransduction in brain development, 
-        and optimization in public health systems. I enjoy building mathematical models 
-        to study real-world systems, especially in biology and disease dynamics.
+        I am a first-year Master’s student in Mathematics at NAU and a Graduate Teaching Assistant. 
+        My research interests include applied mathematics, differential equations, epidemiological 
+        modeling, and mechanobiology. I am passionate about building models to solve real-world problems 
+        and exploring the interface of mathematics with biology and public health.
     </p>
 
-    <h2>Research Interests</h2>
-    <ul>
-        <li>Differential equations and fractional dynamics</li>
-        <li>Epidemiological modeling</li>
-        <li>Optimization of vaccination programs</li>
-        <li>Mechanobiology and mechanosensitive systems</li>
-    </ul>
+    <!-- Courses -->
+    <h2>Courses This Semester</h2>
+    <div class="card">
+        <ul>
+            <li>Abstract Algebra</li>
+            <li>Computer Assisted Mathematics</li>
+            <li>Complex Analysis</li>
+        </ul>
+    </div>
 
+    <!-- Publications -->
+    <h2>Publications</h2>
+    <div class="card">
+        <ul>
+            <li>Title of Publication 1 – Journal/Conference Name (Year)</li>
+            <li>Title of Publication 2 – Journal/Conference Name (Year)</li>
+            <li>Title of Publication 3 – Journal/Conference Name (Year)</li>
+        </ul>
+    </div>
+
+    <!-- Sample Mathematics -->
     <h2>Sample Mathematics</h2>
-    <p>
-        Here is an example of a mathematical model I work with:
-    </p>
-
-    <p style="text-align:center; font-size: 1.2em;">
+    <div class="math">
         \[
         \frac{dS}{dt} = \Lambda - \beta S I - \mu S,
         \qquad
         \frac{dI}{dt} = \beta S I - \gamma I - \mu I.
         \]
-    </p>
-
-    <h2>Links</h2>
-    <p>
-        • Visit my GitHub:  
-        <a href="https://github.com/YOUR_USERNAME" target="_blank">
-            github.com/YOUR_USERNAME
-        </a>
-    </p>
+    </div>
 
 </div>
 
